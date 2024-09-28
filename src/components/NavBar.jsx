@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <Grid2
       container
-      sx={{ height: "68px", marginTop: "40px", paddingX: "60px" }}
+      sx={{ height: "68px", marginTop: "40px" }}
       className="flex-row justify-content-between align-items-center"
     >
       <Grid2>
