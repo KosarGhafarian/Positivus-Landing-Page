@@ -56,3 +56,7 @@ a,
   text-align: center;
   color: #ffffff !important;
 }
+
+.logo-detail img {
+  mix-blend-mode: luminosity;
+}

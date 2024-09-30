@@ -2,8 +2,10 @@ import { Container } from "@mui/material";
 
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
+import LogoDetail from "./components/LogoDetail";
 
 import "./assets/styles/app.css";
+
 const App = () => {
   return (
     <Container
@@ -15,6 +17,7 @@ const App = () => {
     >
       <NavBar />
       <Header />
+      <LogoDetail />
     </Container>
   );
 };
