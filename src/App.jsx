@@ -3,6 +3,7 @@ import { Container } from "@mui/material";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import LogoDetail from "./components/LogoDetail";
+import Services from "./components/Services";
 
 import "./assets/styles/app.css";
 
@@ -18,6 +19,7 @@ const App = () => {
       <NavBar />
       <Header />
       <LogoDetail />
+      <Services />
     </Container>
   );
 };
