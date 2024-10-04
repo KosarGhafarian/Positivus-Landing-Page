@@ -1,3 +1,8 @@
+:root {
+  --green: #b9ff66;
+  --darkBlue: #191a23;
+}
+
 * {
   color: #000000 !important;
   font-family: "Space Grotesk", cursive !important;
@@ -25,7 +30,7 @@ a,
 .nav-button {
   padding: 18px 25px !important;
   box-sizing: border-box !important;
-  border: 1px solid #191a23 !important;
+  border: 1px solid var(--darkBlue) !important;
   border-radius: 14px !important;
 }
 
@@ -48,7 +53,7 @@ a,
 .header-button {
   width: 264px;
   height: 68px;
-  background-color: #191a23 !important;
+  background-color: var(--darkBlue) !important;
   border-radius: 14px !important;
   font-weight: 400;
   font-size: 20px;
@@ -59,4 +64,22 @@ a,
 
 .logo-detail img {
   mix-blend-mode: luminosity;
+}
+
+.sub-header-name {
+  width: 160px;
+  height: 51px;
+  background-color: var(--green);
+  border-radius: 7px;
+  font-weight: 500 !important;
+  font-size: 40px !important;
+  line-height: 51px !important;
+}
+
+.sub-header-description {
+  width: 585px;
+  height: 46px;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 23px !important;
 }
