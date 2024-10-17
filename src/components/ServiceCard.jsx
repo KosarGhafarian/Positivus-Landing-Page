@@ -1,34 +1,54 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  CardActions,
+} from "@mui/material";
 
 import BlackAndGreenDirectionIcon from "../assets/images/BlackAndGreenDirectionIcon.svg";
 import BlackAndWhiteDirectionIcon from "../assets/images/BlackAndWhiteDirectionIcon.svg";
 
-const ServiceCard = ({
-  bgColour,
-  isWhiteTitle = false,
-  isGreen = true,
-  image,
-  title,
-}) => {
+const ServiceCard = ({ data }) => {
   return (
-    <Card variant="outlined" sx={{ backgroundColor: `{bgColour}` }}>
-      <CardContent>
-        <Typography
-          variant="h3"
-          sx={isWhiteTitle && { backgroundColor: "#fff" }}
-        >
-          {title}
+    <Card
+      variant="outlined"
+      sx={{ backgroundColor: `${data.bgColour} !important` }}
+      className="service-card mb-5"
+    >
+      <CardContent className="d-flex justify-content-between">
+        <Typography variant="h3" className="service-title">
+          {data.title.map((e) => (
+            <Typography
+              variant="h3"
+              sx={
+                data?.isTitleWhite ? { backgroundColor: "#fff !important" } : {}
+              }
+            >
+              {e}
+              <br />
+            </Typography>
+          ))}
         </Typography>
+        <CardMedia
+          component="img"
+          image={data.image}
+          width="210px"
+          className={`${data?.className} card-media`}
+        />
+      </CardContent>
+      <CardActions className="actions">
         <img
           src={
-            isGreen ? BlackAndGreenDirectionIcon : BlackAndWhiteDirectionIcon
+            data?.isGreen
+              ? BlackAndGreenDirectionIcon
+              : BlackAndWhiteDirectionIcon
           }
         />
-        <Typography sx={isGreen && { color: "#fff !important" }}>
+        <Typography sx={data?.isGreen ? {} : { color: "#fff !important" }}>
           Learn more
         </Typography>
-      </CardContent>
-      <CardMedia component="img" sx={{ width: "fit-content" }} image={image} />
+      </CardActions>
     </Card>
   );
 };
