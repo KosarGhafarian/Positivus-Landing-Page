@@ -1,11 +1,16 @@
 :root {
   --green: #b9ff66;
   --darkBlue: #191a23;
+  --grey: #f3f3f3;
 }
 
 * {
   color: #000000 !important;
   font-family: "Space Grotesk", cursive !important;
+}
+
+button {
+  text-transform: none !important;
 }
 
 .nav-items {

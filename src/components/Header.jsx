@@ -19,7 +19,7 @@ const Header = () => {
       <Grid2 container>
         <Grid2>
           <img src={Illustration} />
-        </Grid2>{" "}
+        </Grid2>
       </Grid2>
     </Grid2>
   );

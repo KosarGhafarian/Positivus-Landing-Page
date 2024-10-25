@@ -15,12 +15,14 @@ const ServiceCard = ({ data }) => {
       variant="outlined"
       sx={{ backgroundColor: `${data.bgColour} !important` }}
       className="service-card mb-5"
+      key={data.id}
     >
       <CardContent className="d-flex justify-content-between">
         <Typography variant="h3" className="service-title">
           {data.title.map((e) => (
             <Typography
               variant="h3"
+              key={e}
               sx={
                 data?.isTitleWhite ? { backgroundColor: "#fff !important" } : {}
               }
@@ -33,7 +35,6 @@ const ServiceCard = ({ data }) => {
         <CardMedia
           component="img"
           image={data.image}
-          width="210px"
           className={`${data?.className} card-media`}
         />
       </CardContent>
