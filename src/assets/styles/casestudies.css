@@ -1,0 +1,68 @@
+@import url("app.css");
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 70px 60px;
+  gap: 64px;
+  border-radius: 45px !important;
+  width: 1234px;
+  height: 326px;
+  padding-bottom: 60px;
+}
+
+.cards,
+.cards * {
+  background-color: var(--darkBlue) !important;
+}
+
+.detail-card {
+  border: 0;
+  box-shadow: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 286px;
+  height: 186px;
+}
+
+.content {
+  color: #fff !important;
+  width: 286px;
+  min-height: 115px;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 0 !important;
+}
+
+.action {
+  padding: 0 !important;
+  flex-direction: row;
+  align-items: center;
+  width: 140.32px;
+  height: 28px;
+}
+
+.action p {
+  color: var(--green) !important;
+  height: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+}
+
+.action img {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.divider {
+  background-color: #fff !important;
+}

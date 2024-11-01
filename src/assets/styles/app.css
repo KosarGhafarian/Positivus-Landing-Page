@@ -72,8 +72,8 @@ a,
 }
 
 .sub-header-name {
-  width: 160px;
-  height: 51px;
+  /* width: 160px;
+  height: 51px; */
   background-color: var(--green);
   border-radius: 7px;
   font-weight: 500 !important;

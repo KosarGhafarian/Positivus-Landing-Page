@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import LogoDetail from "./components/LogoDetail";
 import Services from "./components/Services";
+import CaseStudies from "./components/CaseStudies";
 
 import "./assets/styles/app.css";
 
@@ -20,6 +21,7 @@ const App = () => {
       <Header />
       <LogoDetail />
       <Services />
+      <CaseStudies />
     </Container>
   );
 };
