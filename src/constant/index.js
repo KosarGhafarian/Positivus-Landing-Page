@@ -73,3 +73,42 @@ export const CaseStudiesData = [
       "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
   },
 ];
+
+export const WorkingProcess = [
+  {
+    id: 1,
+    name: "Consultation",
+    content:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+  },
+  {
+    id: 2,
+    name: "Research and Strategy Development",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+  },
+  {
+    id: 3,
+    name: "Implementation",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+  },
+  {
+    id: 4,
+    name: "ImplementationMonitoring and Optimization",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+  },
+  {
+    id: 5,
+    name: "Reporting and Communication",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+  },
+  {
+    id: 6,
+    name: "Continual Improvement",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+  },
+];
