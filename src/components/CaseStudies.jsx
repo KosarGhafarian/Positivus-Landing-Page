@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import {
   Grid2,
   Card,
@@ -33,8 +35,8 @@ const CaseStudies = () => {
       />
       <Card className="cards">
         {CaseStudiesData.map((e, index) => (
-          <>
-            <CardDetail data={e} key={e.id} />
+          <Fragment key={e.id}>
+            <CardDetail data={e} />
             {index !== CaseStudiesData.length - 1 && (
               <Divider
                 orientation="vertical"
@@ -43,7 +45,7 @@ const CaseStudies = () => {
                 className="divider"
               />
             )}
-          </>
+          </Fragment>
         ))}
       </Card>
     </Grid2>
