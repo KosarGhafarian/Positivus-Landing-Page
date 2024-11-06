@@ -74,7 +74,7 @@ export const CaseStudiesData = [
   },
 ];
 
-export const WorkingProcess = [
+export const WorkingProcessData = [
   {
     id: 1,
     name: "Consultation",
@@ -85,30 +85,30 @@ export const WorkingProcess = [
     id: 2,
     name: "Research and Strategy Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mi sit amet mi finibus luctus quis et risus. Quisque nec ornare ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempor ipsum nec augue cursus, non tempus diam aliquam.",
   },
   {
     id: 3,
     name: "Implementation",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mi sit amet mi finibus luctus quis et risus. Quisque nec ornare ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempor ipsum nec augue cursus, non tempus diam aliquam.",
   },
   {
     id: 4,
     name: "ImplementationMonitoring and Optimization",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mi sit amet mi finibus luctus quis et risus. Quisque nec ornare ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempor ipsum nec augue cursus, non tempus diam aliquam.",
   },
   {
     id: 5,
     name: "Reporting and Communication",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mi sit amet mi finibus luctus quis et risus. Quisque nec ornare ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempor ipsum nec augue cursus, non tempus diam aliquam.",
   },
   {
     id: 6,
     name: "Continual Improvement",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim leo, tempus vel risus ut, fringilla gravida mauris.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mi sit amet mi finibus luctus quis et risus. Quisque nec ornare ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempor ipsum nec augue cursus, non tempus diam aliquam.",
   },
 ];
