@@ -6,6 +6,7 @@ import LogoDetail from "./components/LogoDetail";
 import Services from "./components/Services";
 import CaseStudies from "./components/CaseStudies";
 import WorkingProcess from "./components/WorkingProcess";
+import Team from "./components/Team";
 
 import "./assets/styles/app.css";
 
@@ -24,6 +25,7 @@ const App = () => {
       <Services />
       <CaseStudies />
       <WorkingProcess />
+      <Team />
     </Container>
   );
 };
