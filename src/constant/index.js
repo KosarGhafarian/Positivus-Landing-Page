@@ -4,6 +4,10 @@ import mediaMarketing from "../assets/images/mediaMarketing.svg";
 import emailMarketing from "../assets/images/emailMarketing.svg";
 import content from "../assets/images/content.svg";
 import analytics from "../assets/images/analytics.svg";
+import John from "../assets/images/people/John.svg";
+import Jane from "../assets/images/people/Jane.svg";
+import Michael from "../assets/images/people/Michael.svg";
+import Emily from "../assets/images/people/Emily.svg";
 
 export const ServiceCardData = [
   {
@@ -110,5 +114,40 @@ export const WorkingProcessData = [
     name: "Continual Improvement",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a mi sit amet mi finibus luctus quis et risus. Quisque nec ornare ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempor ipsum nec augue cursus, non tempus diam aliquam.",
+  },
+];
+
+export const TeamData = [
+  {
+    id: 0,
+    name: "John Smith",
+    occupation: "CEO and Founder",
+    profile: John,
+    description:
+      "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
+  },
+  {
+    id: 1,
+    name: "Jane Doe",
+    occupation: "Director of Operations",
+    profile: Jane,
+    description:
+      "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
+  },
+  {
+    id: 2,
+    name: "Michael Brown",
+    occupation: "Senior SEO Specialist",
+    profile: Michael,
+    description:
+      "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+  },
+  {
+    id: 3,
+    name: "Emily Johnson",
+    occupation: "PPC Manager",
+    profile: Emily,
+    description:
+      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
   },
 ];
