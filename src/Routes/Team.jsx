@@ -1,6 +1,6 @@
 import { Grid2 } from "@mui/material";
 
-import SubHeader from "./SubHeader";
+import SubHeader from "../components/SubHeader";
 
 const Team = () => {
   return (

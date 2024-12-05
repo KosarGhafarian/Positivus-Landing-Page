@@ -13,7 +13,7 @@ import {
 import { WorkingProcessData } from "../constant/index";
 import addIcon from "../assets/images/addIcon.svg";
 import minusIcon from "../assets/images/minusIcon.svg";
-import SubHeader from "./SubHeader";
+import SubHeader from "../components/SubHeader";
 import "../assets/styles/workingprocess.css";
 
 const WorkingProcessCard = ({ data }) => {
@@ -48,7 +48,7 @@ const WorkingProcessCard = ({ data }) => {
       {isContentShown && (
         <CardContent className="p-0">
           <Divider />
-          <Typography className="content">{data.content}</Typography>
+          <Typography className="datacontent">{data.content}</Typography>
         </CardContent>
       )}
     </Card>
