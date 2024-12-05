@@ -1,32 +1,17 @@
-import { Container } from "@mui/material";
+import { Routes, Route } from "react-router-dom";
 
-import NavBar from "./components/NavBar";
-import Header from "./components/Header";
-import LogoDetail from "./components/LogoDetail";
-import Services from "./components/Services";
-import CaseStudies from "./components/CaseStudies";
-import WorkingProcess from "./components/WorkingProcess";
-import Team from "./components/Team";
-
-import "./assets/styles/app.css";
+import Home from "./Routes/Home";
 
 const App = () => {
   return (
-    <Container
-      fixed
-      disableGutters
-      className="m-0"
-      sx={{ minWidth: "100%", paddingX: "60px" }}
-      maxWidth={false}
-    >
-      <NavBar />
-      <Header />
-      <LogoDetail />
-      <Services />
-      <CaseStudies />
-      <WorkingProcess />
-      <Team />
-    </Container>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/#services" element={<Home />} />
+      <Route path="/#casestudies" element={<Home />} />
+      <Route path="/#workingprocess" element={<Home />} />
+      <Route path="/#team" element={<Home />} />
+      <Route path="/#testimonials" element={<Home />} />
+    </Routes>
   );
 };
 
