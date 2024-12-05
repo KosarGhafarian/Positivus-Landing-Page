@@ -1,44 +1,56 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
-import { Button, Grid2 } from "@mui/material";
+import { IconButton, Box } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
+import MediaQuery from "../hooks/MediaQuery";
 import Logo from "../assets/images/Positivus-Block-Logo.svg";
+import MenuItems from "./MenuItems";
+
 const NavBar = () => {
+  const matches = MediaQuery();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <Grid2
-      container
-      sx={{ height: "68px", marginTop: "40px" }}
-      className="flex-row justify-content-between align-items-center"
-    >
-      <Grid2>
+    <Box className="navbar">
+      <Box className={!matches ? "mn-fit" : ""}>
         <img src={Logo} />
-      </Grid2>
-      <Grid2
-        container
-        className="flex-row justify-content-between align-items-center"
-      >
-        <Grid2 className="nav-items">
-          <Link>About us</Link>
-        </Grid2>
-        <Grid2 className="nav-items">
-          <Link>Services</Link>
-        </Grid2>
-        <Grid2 className="nav-items">
-          <Link>Use Cases</Link>
-        </Grid2>
-        <Grid2 className="nav-items">
-          <Link>Pricing</Link>
-        </Grid2>
-        <Grid2 className="nav-items">
-          <Link>Blog</Link>
-        </Grid2>
-        <Grid2 className="nav-items button">
-          <Button size="small" variant="outlined" className="nav-button">
-            Request a quote
-          </Button>
-        </Grid2>
-      </Grid2>
-    </Grid2>
+      </Box>
+      {matches ? (
+        <Box
+          container
+          className="d-flex flex-nowrap justify-content-between align-items-center"
+        >
+          <MenuItems />
+        </Box>
+      ) : isMenuOpen ? (
+        <Box className="menu">
+          <Box className="menu-items">
+            <MenuItems />
+          </Box>
+          <IconButton
+            size="medium"
+            onClick={() => {
+              setIsMenuOpen(false);
+            }}
+          >
+            <CloseIcon fontSize="medium" />
+          </IconButton>
+        </Box>
+      ) : (
+        <Box className="mn-fit">
+          <IconButton
+            size="medium"
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            <MenuIcon fontSize="medium" />
+          </IconButton>
+        </Box>
+      )}
+    </Box>
   );
 };
 
