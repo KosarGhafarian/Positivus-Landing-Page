@@ -11,7 +11,7 @@ const LogoDetail = () => {
   return (
     <Grid2
       container
-      className="flex-row flex-nowrap justify-content-between logo-detail"
+      className="flex-row flex-wrap justify-content-between logo-detail"
     >
       <img src={amazonLogo} />
       <img src={dribblle} />
