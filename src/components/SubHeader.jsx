@@ -1,15 +1,14 @@
-import { Grid2, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import MediaQuery from "../hooks/MediaQuery";
 
 const SubHeader = ({ name, description, sx = {} }) => {
   return (
-    <Grid2
-      container
+    <Box
       sx={{ marginY: "100px !important" }}
-      className={`gap-4 align-items-center ${
-        MediaQuery() ? "" : "justify-content-center"
-      }`}
+      className={`d-flex ${
+        MediaQuery() ? "flex-row" : "flex-column justify-content-center"
+      } gap-4 align-items-center `}
     >
       <Typography variant="h2" className="sub-header-name">
         {name}
@@ -17,7 +16,7 @@ const SubHeader = ({ name, description, sx = {} }) => {
       <Typography className="sub-header-description" sx={sx}>
         {description}
       </Typography>
-    </Grid2>
+    </Box>
   );
 };
 
