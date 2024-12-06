@@ -1,5 +1,7 @@
 import { Grid2 } from "@mui/material";
 
+import MediaQuery from "../hooks/MediaQuery";
+
 import amazonLogo from "../assets/images/amazonLogo.svg";
 import dribblle from "../assets/images/dribblle.svg";
 import hubSpot from "../assets/images/hubSpot.svg";
@@ -11,7 +13,9 @@ const LogoDetail = () => {
   return (
     <Grid2
       container
-      className="flex-row flex-wrap justify-content-between logo-detail"
+      className={`flex-row flex-wrap ${
+        MediaQuery() ? "justify-content-between" : "gap-5"
+      } logo-detail`}
     >
       <img src={amazonLogo} />
       <img src={dribblle} />
