@@ -32,7 +32,6 @@ export const ServiceCardData = [
     bgColour: "#191A23",
     isGreen: false,
     isTitleWhite: true,
-    className: "m-0",
   },
   {
     id: 3,
@@ -40,7 +39,6 @@ export const ServiceCardData = [
     image: emailMarketing,
     bgColour: "#F3F3F3",
     isGreen: true,
-    className: "m-0",
   },
   {
     id: 4,
@@ -49,7 +47,6 @@ export const ServiceCardData = [
     bgColour: "#b9ff66",
     isGreen: true,
     isTitleWhite: true,
-    className: "m-0",
   },
   {
     id: 5,
