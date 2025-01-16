@@ -15,7 +15,7 @@ const LogoDetail = () => {
       container
       className={`flex-row flex-wrap ${
         MediaQuery() ? "justify-content-between" : "gap-5"
-      } logo-detail`}
+      } logo-detail mt-5`}
     >
       <img src={amazonLogo} />
       <img src={dribblle} />
