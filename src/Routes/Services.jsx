@@ -1,23 +1,16 @@
-import {
-  Grid2,
-  Card,
-  CardContent,
-  CardActions,
-  CardMedia,
-  Typography,
-  Button,
-} from "@mui/material";
+import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 
+import MediaQuery from "../hooks/MediaQuery";
 import { ServiceCardData } from "../constant/index";
 import proposal from "../assets/images/proposal.svg";
 import BlackAndGreenDirectionIcon from "../assets/images/BlackAndGreenDirectionIcon.svg";
 import BlackAndWhiteDirectionIcon from "../assets/images/BlackAndWhiteDirectionIcon.svg";
-import SubHeader from "./SubHeader";
+import SubHeader from "../components/SubHeader";
 import "../assets/styles/services.css";
 
 const Services = () => {
   return (
-    <Grid2>
+    <Box id="services">
       <SubHeader
         name="Services"
         description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
@@ -27,10 +20,10 @@ const Services = () => {
           <Card
             variant="outlined"
             sx={{ backgroundColor: `${data.bgColour} !important` }}
-            className="service-card mb-5"
+            className="service-card"
             key={data.id}
           >
-            <CardContent className="d-flex justify-content-between">
+            <CardContent>
               <Typography variant="h3" className="service-title">
                 {data.title.map((e) => (
                   <Typography
@@ -47,54 +40,53 @@ const Services = () => {
                   </Typography>
                 ))}
               </Typography>
-              <CardMedia
-                component="img"
-                image={data.image}
-                className={`${data?.className} card-media`}
-              />
+              <Box className="card-media">
+                <img src={data.image} />
+              </Box>
+              <Box className="d-flex align-items-center gap-1">
+                <img
+                  src={
+                    data?.isGreen
+                      ? BlackAndGreenDirectionIcon
+                      : BlackAndWhiteDirectionIcon
+                  }
+                />
+                {MediaQuery() && (
+                  <Typography
+                    sx={data?.isGreen ? {} : { color: "#fff !important" }}
+                  >
+                    Learn more
+                  </Typography>
+                )}
+              </Box>
             </CardContent>
-            <CardActions className="actions">
-              <img
-                src={
-                  data?.isGreen
-                    ? BlackAndGreenDirectionIcon
-                    : BlackAndWhiteDirectionIcon
-                }
-              />
-              <Typography
-                sx={data?.isGreen ? {} : { color: "#fff !important" }}
-              >
-                Learn more
-              </Typography>
-            </CardActions>
           </Card>
         ))}
       </Card>
       <Card variant="outlined" className="proposal-card">
         <CardContent className="proposal-content">
-          <CardContent
-            sx={{
-              height: "fit-content",
-              marginLeft: "18px",
-            }}
-          >
-            <Typography variant="h3">Let’s make things happen</Typography>
+          <Box>
+            <Typography variant="h2">Let’s make things happen</Typography>
             <Typography variant="p">
               Contact us today to learn more about how our digital marketing
               services can help your business grow and succeed online.
             </Typography>
-          </CardContent>
-          <CardMedia
-            component="img"
-            image={proposal}
-            className="proposal-media"
-          />
+            <Button
+              variant="outlined"
+              className="proposal-action"
+              size="medium"
+            >
+              Get your free proposal
+            </Button>
+          </Box>
+          {MediaQuery() && (
+            <Box className="proposal-media">
+              <img src={proposal} />
+            </Box>
+          )}
         </CardContent>
-        <CardActions className="proposal-actions">
-          <Button variant="outlined">Get your free proposal</Button>
-        </CardActions>
       </Card>
-    </Grid2>
+    </Box>
   );
 };
 
