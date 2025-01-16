@@ -73,6 +73,7 @@ a {
   font-weight: 500 !important;
   font-size: 60px !important;
   line-height: 77px !important;
+  max-width: 550px;
 }
 
 .header-description {
@@ -111,7 +112,7 @@ a {
   line-height: 23px !important;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .menu {
     display: flex;
     justify-content: space-between;
