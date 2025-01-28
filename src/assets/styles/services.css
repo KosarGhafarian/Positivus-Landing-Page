@@ -2,7 +2,7 @@
   display: flex;
   border: 0 !important;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  gap: 4rem;
 }
 
 .service-card {
@@ -12,7 +12,7 @@
   border-radius: 45px !important;
   padding: 32px 24px;
   min-width: 250px;
-  max-width: 700px;
+  max-width: 720px;
   width: 100%;
   margin: 20px 0;
   height: 330px;
@@ -65,10 +65,11 @@
   padding: 30px 0px !important;
   margin-bottom: 150px;
   margin-top: 90px;
+  border: 0 !important;
 }
 
 .proposal-content {
-  padding: 40px 0 !important;
+  padding: 7px 0 !important;
   height: inherit;
   min-width: -webkit-fill-available;
   max-width: -webkit-fill-available;
@@ -84,8 +85,8 @@
   flex-wrap: nowrap;
   align-items: baseline;
   gap: 25px;
-  width: 480px;
-  padding-left: 100px;
+  width: 624px;
+  padding-left: 150px;
 }
 
 .proposal-content h2 {
@@ -113,7 +114,7 @@
 
 .proposal-media {
   position: absolute;
-  right: 5%;
+  right: 12%;
   bottom: 0;
   top: 0;
   height: min-content;

@@ -69,6 +69,14 @@ a {
   gap: 30px;
 }
 
+.header-box div:last-child {
+  display: block;
+  width: fit-content;
+}
+
+.header-box div:last-child img {
+  width: 100%;
+}
 .header-title {
   font-weight: 500 !important;
   font-size: 60px !important;
@@ -104,6 +112,8 @@ a {
   font-weight: 500 !important;
   font-size: 40px !important;
   line-height: 51px !important;
+  text-wrap: nowrap;
+  text-align: center;
 }
 
 .sub-header-description {
@@ -159,5 +169,10 @@ a {
     font-size: 13px !important;
     line-height: 22px !important;
     letter-spacing: -1px !important;
+  }
+
+  .sub-header-description {
+    line-height: 20px !important;
+    font-size: 13px !important;
   }
 }
