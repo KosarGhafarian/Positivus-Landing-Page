@@ -13,6 +13,7 @@ const Services = () => {
     <Box id="services">
       <SubHeader
         name="Services"
+        sx={{ maxWidth: "600px" }}
         description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
       />
       <Card variant="outlined" className="service-card-container">
