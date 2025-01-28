@@ -1,54 +1,32 @@
-import { Fragment } from "react";
-
-import {
-  Grid2,
-  Card,
-  CardContent,
-  CardActions,
-  Typography,
-  Divider,
-} from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 
 import BlackAndGreenDirectionIcon from "../assets/images/BlackAndGreenDirectionIcon.svg";
 import { CaseStudiesData } from "../constant/index";
-import SubHeader from "./SubHeader";
+import SubHeader from "../components/SubHeader";
 import "../assets/styles/casestudies.css";
-
-const CardDetail = ({ data }) => {
-  return (
-    <Card className="detail-card">
-      <CardContent className="content">{data.content}</CardContent>
-      <CardActions className="action">
-        <Typography>Learn more</Typography>
-        <img src={BlackAndGreenDirectionIcon} />
-      </CardActions>
-    </Card>
-  );
-};
 
 const CaseStudies = () => {
   return (
-    <Grid2>
+    <Box id="casestudies">
       <SubHeader
+        sx={{ maxWidth: "580px" }}
         name="Case Studies"
         description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
       />
-      <Card className="cards">
-        {CaseStudiesData.map((e, index) => (
-          <Fragment key={e.id}>
-            <CardDetail data={e} />
-            {index !== CaseStudiesData.length - 1 && (
-              <Divider
-                orientation="vertical"
-                variant="middle"
-                flexItem
-                className="divider"
-              />
-            )}
-          </Fragment>
+      <Box className="cards">
+        {CaseStudiesData.map((data) => (
+          <Card variant="outlined" className="detail-card" key={data.id}>
+            <CardContent className="content">
+              <Typography>{data.content}</Typography>
+              <Box className="action">
+                <Typography>Learn more</Typography>
+                <img src={BlackAndGreenDirectionIcon} />
+              </Box>
+            </CardContent>
+          </Card>
         ))}
-      </Card>
-    </Grid2>
+      </Box>
+    </Box>
   );
 };
 
