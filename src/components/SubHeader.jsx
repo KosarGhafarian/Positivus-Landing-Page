@@ -8,7 +8,7 @@ const SubHeader = ({ name, description, sx = {} }) => {
       sx={{ marginY: "100px !important" }}
       className={`d-flex ${
         MediaQuery() ? "flex-row" : "flex-column justify-content-center"
-      } gap-4 align-items-center `}
+      } gap-5 align-items-center `}
     >
       <Typography variant="h2" className="sub-header-name">
         {name}
