@@ -19,7 +19,7 @@ const Header = () => {
           Book a consultation
         </Button>
       </Box>
-      <Box className="d-block">
+      <Box>
         <img src={Illustration} />
       </Box>
     </Box>
