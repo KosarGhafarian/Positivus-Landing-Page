@@ -112,7 +112,6 @@ a {
   font-weight: 500 !important;
   font-size: 40px !important;
   line-height: 51px !important;
-  text-wrap: nowrap;
   text-align: center;
 }
 
@@ -174,5 +173,8 @@ a {
   .sub-header-description {
     line-height: 20px !important;
     font-size: 13px !important;
+    text-align: center;
+    width: -webkit-fill-available !important;
+    max-width: -webkit-fill-available !important;
   }
 }
