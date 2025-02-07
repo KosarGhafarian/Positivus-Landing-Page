@@ -1,14 +1,6 @@
 import { useState } from "react";
 
-import {
-  Box,
-  Card,
-  CardContent,
-  Grid2,
-  IconButton,
-  Typography,
-  Divider,
-} from "@mui/material";
+import { Box, Card, CardContent, IconButton, Typography } from "@mui/material";
 
 import { WorkingProcessData } from "../constant/index";
 import addIcon from "../assets/images/addIcon.svg";
@@ -21,34 +13,21 @@ const WorkingProcessCard = ({ data }) => {
   return (
     <Card className={`processcard ${isContentShown && " green"}`}>
       <CardContent className="main-content p-0">
-        <Box className="detail-box">
-          <Box className="title-box">
-            <Typography className="number">0{data.id}</Typography>
-            <Typography>{data.name}</Typography>
-          </Box>
-          {isContentShown ? (
-            <IconButton
-              onClick={() => {
-                setIsContentShown(false);
-              }}
-            >
-              <img src={minusIcon} />
-            </IconButton>
-          ) : (
-            <IconButton
-              onClick={() => {
-                setIsContentShown(true);
-              }}
-            >
-              <img src={addIcon} />
-            </IconButton>
-          )}
+        <Box className="title-box">
+          <Typography>0{data.id}</Typography>
+          <Typography>{data.name}</Typography>
         </Box>
+        <IconButton
+          onClick={() => {
+            setIsContentShown(!isContentShown);
+          }}
+        >
+          {isContentShown ? <img src={minusIcon} /> : <img src={addIcon} />}
+        </IconButton>
       </CardContent>
       {isContentShown && (
-        <CardContent className="p-0">
-          <Divider />
-          <Typography className="datacontent">{data.content}</Typography>
+        <CardContent className="detail">
+          <Typography>{data.content}</Typography>
         </CardContent>
       )}
     </Card>
@@ -56,18 +35,18 @@ const WorkingProcessCard = ({ data }) => {
 };
 const WorkingProcess = () => {
   return (
-    <Grid2>
+    <Box id="workingprocess">
       <SubHeader
         name="Our Working Process"
         description="Step-by-Step Guide to Achieving Your Business Goals"
         sx={{ width: "304px !important" }}
       />
-      <Card variant="outlined" className="service-card-container">
+      <Card variant="outlined" className="process-card-container">
         {WorkingProcessData.map((data) => (
           <WorkingProcessCard key={data.id} data={data} />
         ))}
       </Card>
-    </Grid2>
+    </Box>
   );
 };
 
