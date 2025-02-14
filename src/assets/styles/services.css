@@ -1,8 +1,9 @@
 .service-card-container {
   display: flex;
   border: 0 !important;
-  flex-wrap: wrap;
   gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .service-card {
@@ -11,11 +12,12 @@
   box-shadow: 0px 5px 0px var(--darkBlue);
   border-radius: 45px !important;
   padding: 32px 24px;
-  min-width: 200px;
-  max-width: 720px;
-  width: 100%;
-  margin: 20px 0;
-  height: 330px;
+  /* min-width: 200px; */
+  /* max-width: 571px; */
+  flex: 0 0 45.7%;
+  /* width: 100%; */
+  margin: 20px auto 20px 0;
+  /* height: 330px; */
 }
 
 .card-media {
