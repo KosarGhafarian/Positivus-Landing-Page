@@ -8,6 +8,8 @@ import John from "../assets/images/people/John.svg";
 import Jane from "../assets/images/people/Jane.svg";
 import Michael from "../assets/images/people/Michael.svg";
 import Emily from "../assets/images/people/Emily.svg";
+import Brian from "../assets/images/people/Brian.svg";
+import Sarah from "../assets/images/people/Sarah.svg";
 
 export const ServiceCardData = [
   {
@@ -120,31 +122,41 @@ export const TeamData = [
     name: "John Smith",
     occupation: "CEO and Founder",
     profile: John,
-    description:
-      "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
+    description: `10+ years of experience in digital\nmarketing. Expertise in SEO, PPC,\nand content strategy`,
   },
   {
     id: 1,
     name: "Jane Doe",
     occupation: "Director of Operations",
     profile: Jane,
-    description:
-      "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
+    description: `7+ years of experience in project\nmanagement and team leadership.\nStrong organizational and\ncommunication skills`,
   },
   {
     id: 2,
     name: "Michael Brown",
     occupation: "Senior SEO Specialist",
     profile: Michael,
-    description:
-      "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+    description: `5+ years of experience in SEO and\ncontent creation. Proficient in\nkeyword research and on-page\noptimization`,
   },
   {
     id: 3,
     name: "Emily Johnson",
     occupation: "PPC Manager",
     profile: Emily,
-    description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    description: `3+ years of experience in paid\nsearch advertising. Skilled in\ncampaign management and\nperformance analysis`,
+  },
+  {
+    id: 4,
+    name: "Brian Williams",
+    occupation: "Social Media Specialist",
+    profile: Brian,
+    description: `4+ years of experience in social\nmedia marketing. Proficient in\ncreating and scheduling content,\nanalyzing metrics, and building\n  engagement`,
+  },
+  {
+    id: 5,
+    name: "Sarah Kim",
+    occupation: "Content Creator",
+    profile: Sarah,
+    description: `2+ years of experience in writing\nand editing\nSkilled in creating compelling, SEO-optimized content for various\nindustries`,
   },
 ];
