@@ -1,4 +1,6 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+import { Link } from "react-scroll";
 
 import { Button, Box } from "@mui/material";
 
@@ -7,28 +9,38 @@ const MenuItems = () => {
   return (
     <>
       <Box className="nav-items">
-        <Link to="/#team">About us</Link>
+        <Link to="team" smooth={true} duration={500}>
+          About us
+        </Link>
       </Box>
       <Box className="nav-items">
-        <Link to="/#services">Services</Link>
+        <Link to="services" smooth={true} duration={500}>
+          Services
+        </Link>
       </Box>
       <Box className="nav-items">
-        <Link to="/#casestudies">Use Cases</Link>
+        <Link to="casestudies" smooth={true} duration={500}>
+          Use Cases
+        </Link>
       </Box>
       <Box className="nav-items">
-        <Link to="/#workingprocess">Pricing</Link>
+        <Link to="workingprocess" smooth={true} duration={500}>
+          Pricing
+        </Link>
       </Box>
       <Box className="nav-items">
-        <Link to="/#testimonials">Blog</Link>
+        <Link to="testimonials" smooth={true} duration={500}>
+          Blog
+        </Link>
       </Box>
       <Box>
         <Button
           size="small"
           variant="outlined"
           className="nav-button"
-          onClick={() => {
-            navigate("/#workingprocess", { replace: true });
-          }}
+          // onClick={() => {
+          //   navigate("/#workingprocess", { replace: true });
+          // }}
         >
           Request a quote
         </Button>
