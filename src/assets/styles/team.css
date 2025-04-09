@@ -1,0 +1,65 @@
+.team-detail {
+  display: flex;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  column-gap: 0;
+}
+
+.team-card {
+  padding: 40px 35px;
+  flex: 0 0 31.4333%;
+  background: #ffffff;
+  border: 1px solid var(--darkBlue) !important;
+  box-shadow: 0px 5px 0px var(--darkBlue);
+  border-radius: 45px !important;
+}
+
+.team-personal {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-personal .detail {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.team-personal .description {
+  display: flex;
+  width: 100%;
+  padding-top: 25px;
+  border-top: 1px solid var(--darkBlue);
+}
+
+.team-personal .description > p {
+  font-size: 16px !important;
+  line-height: 23px !important;
+  white-space: break-spaces;
+  text-align: left;
+}
+
+.profile-box {
+  clip-path: path(
+    "M 91.631 53.9117 C 124.473 91.3213 94.1455 121.649 56.7359 88.8068 C 19.3263 121.649 -11.0016 91.3213 21.8408 53.9117 C -11.0016 16.5021 19.3263 -13.8258 56.7359 19.0166 C 94.1455 -13.8258 124.473 16.5021 91.631 53.9117 V 53.9117 Z"
+  );
+  width: 123px;
+  height: 112px;
+  background: #231f20;
+}
+
+.profile-image {
+  clip-path: path(
+    "M83.8068 48.9117C116.649 86.3213 86.3213 116.649 48.9117 83.8068C11.5021 116.649 -18.8258 86.3213 14.0166 48.9117C-18.8258 11.5021 11.5021 -18.8258 48.9117 14.0166C86.3213 -18.8258 116.649 11.5021 83.8068 48.9117V48.9117Z"
+  );
+  width: 123px;
+  height: 112px;
+}
+
+@media only screen and (max-width: 950px) {
+  .team-card {
+    min-width: 100%;
+  }
+}
