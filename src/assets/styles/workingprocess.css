@@ -5,6 +5,7 @@
   align-items: stretch;
   gap: 3rem;
   border: 0 !important;
+  padding-bottom: 15px;
 }
 
 .processcard {
