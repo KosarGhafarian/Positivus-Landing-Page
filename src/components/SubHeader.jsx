@@ -5,7 +5,7 @@ import MediaQuery from "../hooks/MediaQuery";
 const SubHeader = ({ name, description, sx = {} }) => {
   return (
     <Box
-      sx={{ marginY: "100px !important" }}
+      sx={{ marginY: "90px !important" }}
       className={`d-flex ${
         MediaQuery() ? "flex-row" : "flex-column justify-content-center"
       } gap-5 align-items-center `}
