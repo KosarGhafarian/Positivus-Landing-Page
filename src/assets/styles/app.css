@@ -4,6 +4,15 @@
   --grey: #f3f3f3;
 }
 
+#home {
+  margin: 0 8px;
+  padding: 0 8px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 * {
   color: #000000 !important;
   font-family: "Space Grotesk", cursive !important;
