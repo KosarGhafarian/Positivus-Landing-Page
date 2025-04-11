@@ -1,5 +1,6 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 
+import Linkden from "../assets/images/linkden.svg";
 import { TeamData } from "../constant/index";
 import SubHeader from "../components/SubHeader";
 
@@ -17,16 +18,25 @@ const Team = () => {
         {TeamData.map((data) => (
           <Card variant="outlined" className="team-card" key={data.id}>
             <CardContent className="team-personal">
-              <Box className="detail">
-                <Box className="profile-box">
-                  <Box
-                    className="profile-image"
-                    sx={{ backgroundImage: `url(${data.profile})` }}
-                  ></Box>
+              <Box className="team-personal-detail">
+                <Box className="detail">
+                  <Box className="profile-box">
+                    <Box
+                      className="profile-image"
+                      sx={{ backgroundImage: `url(${data.profile})` }}
+                    />
+                  </Box>
+                  <Box>
+                    <Typography className="team-name" component="h4">
+                      {data.name}
+                    </Typography>
+                    <Typography className="team-occupation">
+                      {data.occupation}
+                    </Typography>
+                  </Box>
                 </Box>
-                <Box>
-                  <Typography>{data.name}</Typography>
-                  <Typography>{data.occupation}</Typography>
+                <Box className="social-links">
+                  <img src={Linkden} alt="linkden" />
                 </Box>
               </Box>
               <Box className="description">
