@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 !important;
-  width: fit-content;
+  width: 100%;
 }
 
 .team-personal-detail {
@@ -28,7 +28,7 @@
   align-items: flex-start;
   flex-wrap: nowrap;
   min-width: fit-content;
-  margin-left: -15px;
+  justify-content: space-between;
 }
 
 .team-personal .detail {
@@ -47,7 +47,7 @@
   margin-left: -5px;
 }
 
-.team-personal .description > p {
+.team-personal .description>p {
   font-size: 16px !important;
   line-height: 23px !important;
   white-space: break-spaces;
@@ -55,18 +55,16 @@
 }
 
 .profile-box {
-  clip-path: path(
-    "M 91.631 53.9117 C 124.473 91.3213 94.1455 121.649 56.7359 88.8068 C 19.3263 121.649 -11.0016 91.3213 21.8408 53.9117 C -11.0016 16.5021 19.3263 -13.8258 56.7359 19.0166 C 94.1455 -13.8258 124.473 16.5021 91.631 53.9117 V 53.9117 Z"
-  );
+  clip-path: path("M 91.631 53.9117 C 124.473 91.3213 94.1455 121.649 56.7359 88.8068 C 19.3263 121.649 -11.0016 91.3213 21.8408 53.9117 C -11.0016 16.5021 19.3263 -13.8258 56.7359 19.0166 C 94.1455 -13.8258 124.473 16.5021 91.631 53.9117 V 53.9117 Z"
+    );
   width: 123px;
   height: 112px;
   background: #231f20;
 }
 
 .profile-image {
-  clip-path: path(
-    "M83.8068 48.9117C116.649 86.3213 86.3213 116.649 48.9117 83.8068C11.5021 116.649 -18.8258 86.3213 14.0166 48.9117C-18.8258 11.5021 11.5021 -18.8258 48.9117 14.0166C86.3213 -18.8258 116.649 11.5021 83.8068 48.9117V48.9117Z"
-  );
+  clip-path: path("M83.8068 48.9117C116.649 86.3213 86.3213 116.649 48.9117 83.8068C11.5021 116.649 -18.8258 86.3213 14.0166 48.9117C-18.8258 11.5021 11.5021 -18.8258 48.9117 14.0166C86.3213 -18.8258 116.649 11.5021 83.8068 48.9117V48.9117Z"
+    );
   width: 123px;
   height: 112px;
 }
@@ -81,15 +79,31 @@
 .team-occupation {
   font-size: 18px !important;
   line-height: 23px !important;
-  text-wrap: nowrap;
 }
 
-/* .social-links {
-  margin-left: -25px;
-} */
+.team-button {
+  padding: 20px 35px !important;
+  background-color: var(--darkBlue) !important;
+  border-radius: 14px !important;
+  font-size: 18px !important;
+  text-align: center;
+  color: #FFFFFF !important;
+  float: inline-end;
+  margin-top: 40px !important;
+}
 
 @media only screen and (max-width: 950px) {
   .team-card {
     min-width: 100%;
+  }
+
+  .team-personal-detail,
+  .team-personal .detail {
+    width: inherit;
+    min-width: 0;
+  }
+
+  .team-button {
+    width: 100%;
   }
 }
