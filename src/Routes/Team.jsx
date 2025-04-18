@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 
 import Linkden from "../assets/images/linkden.svg";
 import { TeamData } from "../constant/index";
@@ -8,7 +8,7 @@ import "../assets/styles/team.css";
 
 const Team = () => {
   return (
-    <Box sx={{ paddingBottom: "100px", marginBottom: "100px" }}>
+    <Box>
       <SubHeader
         name="Team"
         sx={{ maxWidth: "473px !important", minWidth: "345px" }}
@@ -46,6 +46,9 @@ const Team = () => {
           </Card>
         ))}
       </Box>
+      <Button className="team-button" size="medium" content="contained">
+        See all team
+      </Button>
     </Box>
   );
 };
