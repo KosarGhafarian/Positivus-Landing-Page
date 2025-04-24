@@ -12,12 +12,8 @@
   box-shadow: 0px 5px 0px var(--darkBlue);
   border-radius: 45px !important;
   padding: 32px 24px;
-  /* min-width: 200px; */
-  /* max-width: 571px; */
   flex: 0 0 45.7%;
-  /* width: 100%; */
   margin: 20px auto 20px 0;
-  /* height: 330px; */
 }
 
 .card-media {
@@ -65,7 +61,6 @@
   background-color: var(--grey) !important;
   border-radius: 45px !important;
   padding: 30px 0px !important;
-  margin-bottom: 150px;
   margin-top: 90px;
   border: 0 !important;
 }
@@ -81,7 +76,7 @@
   right: 0;
 }
 
-.proposal-content > div:first-child {
+.proposal-content>div:first-child {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -171,7 +166,7 @@
     padding: 0 15px 0 5px !important;
   }
 
-  .proposal-content > div:first-child {
+  .proposal-content>div:first-child {
     max-width: inherit;
     padding-left: 30px;
     width: inherit;
