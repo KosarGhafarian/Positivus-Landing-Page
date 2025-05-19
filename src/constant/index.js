@@ -160,3 +160,62 @@ export const TeamData = [
     description: `2+ years of experience in writing\nand editing\nSkilled in creating compelling, SEO-optimized content for various\nindustries`,
   },
 ];
+
+export const TestimonialsList = [
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 1,
+  },
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 2,
+  },
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 3,
+  },
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 4,
+  },
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 5,
+  },
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 6,
+  },
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 7,
+  },
+  {
+    quote:
+      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads...",
+    name: "John Smith",
+    title: "Marketing Director at XYZ Corp",
+    id: 8,
+  },
+];
