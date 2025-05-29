@@ -7,13 +7,17 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
+import MediaQuery from "../hooks/MediaQuery";
 import SubHeader from "../components/SubHeader";
 import { TestimonialsList } from "../constant/index";
 import "../assets/styles/testimonials.css";
 
 const Testimonials = () => {
   return (
-    <Box id="testimonials">
+    <Box
+      id="testimonials"
+      sx={{ marginBottom: "100px", paddingBottom: "100px" }}
+    >
       <SubHeader
         name="Testimonials"
         description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
@@ -21,10 +25,10 @@ const Testimonials = () => {
       />
       <Swiper
         setWrapperSize
-        slidesPerView={2}
-        centeredSlides
-        spaceBetween={20}
-        loop
+        slidesPerView={MediaQuery() ? 2 : 1}
+        centeredSlides={MediaQuery() ? true : false}
+        spaceBetween={MediaQuery() ? 20 : 40}
+        loop={MediaQuery() ? true : false}
         pagination={{
           clickable: false,
           renderBullet: (index, className) => {
@@ -43,8 +47,10 @@ const Testimonials = () => {
               <Typography className="quote">"{item.quote}"</Typography>
             </Box>
             <Box className="arrow-down"></Box>
-            <Typography className="name">{item.name}</Typography>
-            <Typography className="title">{item.title}</Typography>
+            <Box className="person">
+              <Typography className="name">{item.name}</Typography>
+              <Typography className="title">{item.title}</Typography>
+            </Box>
           </SwiperSlide>
         ))}
       </Swiper>
