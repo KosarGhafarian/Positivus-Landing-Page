@@ -35,17 +35,28 @@
   border: 2px solid var(--green);
   transform: rotate(315deg);
   position: relative;
-  top: -44px;
+  top: -45px;
   left: 45px;
   z-index: 1000;
   background-color: var(--darkBlue);
 }
 
 .quote {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 20px;
   color: #fff !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.person {
+  position: relative;
+  left: 72px;
+  width: fit-content;
+}
+
+.person p {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 23px !important;
 }
 
 .name {
@@ -56,7 +67,7 @@
 
 .title {
   font-size: 0.95rem;
-  color: #ccc !important;
+  color: #fff !important;
 }
 
 .custom-bullet {
@@ -69,4 +80,45 @@
 
 .swiper-pagination-bullet-active .paginationStar {
   fill: var(--green);
+}
+
+@media only screen and (max-width: 950px) {
+  .testimonial-card {
+    min-width: fit-content;
+    padding: 15px 19px;
+  }
+
+  .quote {
+    font-size: 10px !important;
+    line-height: 13px !important;
+  }
+
+  .testimonialsSwiper {
+    padding: 20px 14px;
+  }
+
+  .testimonialsSwiper .swiper-slide {
+    padding: 20px 0;
+  }
+
+  .testimonialsSwiper .swiper-wrapper {
+    padding: 20px 0;
+  }
+
+  .person {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .person p {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+
+  .arrow-down {
+    aspect-ratio: 3;
+    clip-path: polygon(0 100%, 0 0, 32% 100%, 0 100%, 0 0, 0 0, 0 0, 0 0);
+    top: -43px;
+  }
 }
