@@ -8,7 +8,7 @@ import "../assets/styles/team.css";
 
 const Team = () => {
   return (
-    <Box>
+    <Box sx={{ height: "100%" }}>
       <SubHeader
         name="Team"
         sx={{ maxWidth: "473px !important", minWidth: "345px" }}

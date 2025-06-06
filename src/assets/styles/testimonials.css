@@ -1,3 +1,7 @@
+#testimonials {
+  height: 100%;
+}
+
 .testimonialsSwiper {
   background-color: var(--darkBlue);
   padding: 40px;
@@ -108,6 +112,7 @@
   .person {
     margin-bottom: 10px;
     padding-bottom: 10px;
+    max-width: 185px;
   }
 
   .person p {

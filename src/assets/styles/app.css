@@ -11,6 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 html {
@@ -39,6 +41,7 @@ a {
   margin-top: 30px;
   gap: 10px;
   justify-content: space-between !important;
+  height: 100%;
 }
 
 .navbar,
@@ -73,9 +76,10 @@ a {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 
-.header-box>div {
+.header-box > div {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -114,6 +118,10 @@ a {
   color: #ffffff !important;
   width: fit-content;
   padding: 15px 25px !important;
+}
+
+.logo-detail {
+  height: 100%;
 }
 
 .logo-detail img {

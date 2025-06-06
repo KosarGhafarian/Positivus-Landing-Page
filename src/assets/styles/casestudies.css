@@ -1,3 +1,7 @@
+#casestudies {
+  height: 100%;
+}
+
 .cards {
   display: flex;
   padding: 50px 20px;

@@ -1,3 +1,7 @@
+#workingprocess {
+  height: 100%;
+}
+
 .process-card-container {
   display: flex;
   flex-direction: column;
