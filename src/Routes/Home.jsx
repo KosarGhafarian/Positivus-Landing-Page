@@ -6,6 +6,7 @@ import CaseStudies from "./CaseStudies";
 import WorkingProcess from "./WorkingProcess";
 import Team from "./Team";
 import Testimonials from "./Testimonials";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <WorkingProcess />
       <Team />
       <Testimonials />
+      <ContactUs />
     </div>
   );
 };
