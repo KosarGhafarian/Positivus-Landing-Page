@@ -14,10 +14,7 @@ import "../assets/styles/testimonials.css";
 
 const Testimonials = () => {
   return (
-    <Box
-      id="testimonials"
-      sx={{ marginBottom: "100px", paddingBottom: "100px" }}
-    >
+    <Box id="testimonials">
       <SubHeader
         name="Testimonials"
         description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
