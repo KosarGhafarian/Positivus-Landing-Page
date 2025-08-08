@@ -161,61 +161,10 @@ export const TeamData = [
   },
 ];
 
-export const TestimonialsList = [
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 1,
-  },
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 2,
-  },
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 3,
-  },
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 4,
-  },
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 5,
-  },
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 6,
-  },
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 7,
-  },
-  {
-    quote:
-      "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
-    name: "John Smith",
-    title: "Marketing Director at XYZ Corp",
-    id: 8,
-  },
-];
+export const TestimonialsList = {
+  quote:
+    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+  name: "John Smith",
+  title: "Marketing Director at XYZ Corp",
+  id: 0,
+};
