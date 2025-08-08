@@ -41,18 +41,20 @@ const Testimonials = () => {
         modules={[Pagination]}
         className="testimonialsSwiper"
       >
-        {TestimonialsList.map((item) => (
-          <SwiperSlide key={item.id}>
-            <Box className="testimonial-card">
-              <Typography className="quote">"{item.quote}"</Typography>
-            </Box>
-            <Box className="arrow-down"></Box>
-            <Box className="person">
-              <Typography className="name">{item.name}</Typography>
-              <Typography className="title">{item.title}</Typography>
-            </Box>
-          </SwiperSlide>
-        ))}
+        {Array(Math.floor(Math.random() * (50 - 20)))
+          .fill(TestimonialsList)
+          .map((item, index) => (
+            <SwiperSlide key={Math.abs(index - item.id)}>
+              <Box className="testimonial-card">
+                <Typography className="quote">"{item.quote}"</Typography>
+              </Box>
+              <Box className="arrow-down"></Box>
+              <Box className="person">
+                <Typography className="name">{item.name}</Typography>
+                <Typography className="title">{item.title}</Typography>
+              </Box>
+            </SwiperSlide>
+          ))}
       </Swiper>
     </Box>
   );
