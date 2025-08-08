@@ -10,6 +10,8 @@
 }
 
 .testimonialsSwiper .swiper-slide {
+  max-width: fit-content;
+  margin: 0 10px;
   padding: 40px 0;
 }
 
@@ -103,6 +105,7 @@
 
   .testimonialsSwiper .swiper-slide {
     padding: 20px 0;
+    margin: 0;
   }
 
   .testimonialsSwiper .swiper-wrapper {
