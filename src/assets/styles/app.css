@@ -143,6 +143,57 @@ a {
   line-height: 23px !important;
 }
 
+.contact-us-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 60px 100px 80px;
+  gap: 10px;
+  background: var(--grey);
+  border-radius: 45px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.contact-item .MuiFormControl-root {
+  width: 100%;
+}
+
+.contact-item fieldset {
+  border-color: #000;
+  background-color: #fff;
+  border-radius: 14px;
+  box-sizing: border-box;
+  padding: 18px 30px;
+}
+
+.contact-item .MuiInputLabel-formControl {
+  font-size: 18px !important;
+  line-height: 23px !important;
+  color: #898989 !important;
+  margin: 0 18px;
+}
+
+.contact-item .MuiInputBase-input {
+  color: #000 !important;
+  position: relative;
+  z-index: 1000;
+}
+
+.contact-us-form button {
+  padding: 20px 35px !important;
+  background-color: var(--darkBlue) !important;
+  border-radius: 14px !important;
+  font-size: 18px !important;
+  text-align: center;
+  color: #ffffff !important;
+  width: 100% !important;
+}
+
 @media only screen and (max-width: 950px) {
   .menu {
     display: flex;
