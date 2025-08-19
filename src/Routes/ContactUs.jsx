@@ -11,7 +11,9 @@ import {
   Button,
 } from "@mui/material";
 
+import contactUs from "../assets/images/contactUs.svg";
 import SubHeader from "../components/SubHeader";
+
 const ContactUs = () => {
   const {
     control,
@@ -122,6 +124,7 @@ const ContactUs = () => {
             </Button>
           </Grid2>
         </Grid2>
+        <img src={contactUs} />
       </Box>
     </Box>
   );
