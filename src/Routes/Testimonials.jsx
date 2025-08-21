@@ -38,7 +38,7 @@ const Testimonials = () => {
         modules={[Pagination]}
         className="testimonialsSwiper"
       >
-        {Array(Math.floor(Math.random() * (50 - 20)))
+        {Array(Math.floor(Math.random() * (40 - 20)))
           .fill(TestimonialsList)
           .map((item, index) => (
             <SwiperSlide key={Math.abs(index - item.id)}>
