@@ -257,4 +257,8 @@ a {
     width: -webkit-fill-available !important;
     max-width: -webkit-fill-available !important;
   }
+
+  .contact-us-form {
+    padding: 60px 20px;
+  }
 }
