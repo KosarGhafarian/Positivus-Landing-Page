@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { useForm, Controller } from "react-hook-form";
 
 import {
@@ -9,21 +11,32 @@ import {
   Grid2,
   TextField,
   Button,
+  Snackbar,
+  Typography,
 } from "@mui/material";
+import DoneIcon from "@mui/icons-material/Done";
 
 import MediaQuery from "../hooks/MediaQuery";
 import contactUs from "../assets/images/contactUs.svg";
 import SubHeader from "../components/SubHeader";
 
 const ContactUs = () => {
+  const [open, setOpen] = useState(false);
   const {
     control,
     formState: { errors },
     handleSubmit,
     watch,
+    reset,
   } = useForm();
 
-  const handleContactForm = (inputData) => {};
+  const handleContactForm = (inputData) => {
+    setOpen(true);
+    reset();
+    setTimeout(() => {
+      setOpen(false);
+    }, 2000);
+  };
 
   return (
     <Box id="contactus">
@@ -170,6 +183,22 @@ const ContactUs = () => {
         </Grid2>
         {MediaQuery() && <img src={contactUs} />}
       </Box>
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        open={open}
+        onClose={() => {
+          setOpen(false);
+        }}
+        className="submit-message"
+        message={
+          <Box className="submit">
+            <DoneIcon className="color-darkBlue" />
+            <Typography>Submission Successful</Typography>
+          </Box>
+        }
+        slots={{ transition: "SlideTransition" }}
+        key={"bottomright"}
+      />
     </Box>
   );
 };
