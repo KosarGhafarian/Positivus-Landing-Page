@@ -4,6 +4,11 @@
   --grey: #f3f3f3;
 }
 
+.color-darkBlue,
+.color-darkBlue * {
+  color: var(--darkBlue) !important;
+}
+
 #home {
   margin: 0 10px;
   padding: 0 10px;
@@ -199,6 +204,17 @@ a {
   text-align: center;
   color: #ffffff !important;
   width: 100% !important;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.submit-message,
+.submit-message * {
+  background-color: var(--green) !important;
 }
 
 @media only screen and (max-width: 950px) {
